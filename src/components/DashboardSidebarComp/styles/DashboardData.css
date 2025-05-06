@@ -29,7 +29,7 @@
     box-shadow: 0 4px 6px #0000001a;
     color: #000;
     display: none;
-    right: -4px;
+    right: 4px;
     padding: 5px 0;
     position: absolute;
     top: 100%;
@@ -44,7 +44,7 @@
   padding-bottom: 6px;
   display: flex;
   justify-content: end;
-  width: 100%;
+  width: 100% !important;
 
 
 }
@@ -290,9 +290,11 @@ padding: 16px;
   width: 30%;
 } */
 
-.search-main { position: absolute !important;
+.search-main {
+  position: absolute !important;
   z-index: 100;
   top: 10px;
+  background-color: transparent !important;
   width: fit-content !important;
  }
 
