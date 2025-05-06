@@ -54,10 +54,14 @@
 .stock-ticker {
   font-family: 'Arial', sans-serif;
   width: 100%;
-  max-width: 350px;
+  max-width: 350px !important;
   color: #fff;
   border-radius: 10px;
   padding: 10px;
+}
+.dashboard-head {  
+display: flex !important;
+justify-content: space-between !important;
 }
 
 /* Default search-only view */
