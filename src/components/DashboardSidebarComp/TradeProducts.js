@@ -278,7 +278,7 @@
 
 // export default FinancialCards;
 
-import React from "react";
+
 // import valourThemeCard from "../DashboardSidebarComp/images/products-theme-card.jpeg";
 import valourThemeCard from "../DashboardSidebarComp/images/products-theme-card.jpg";
 import valourThemeCard2 from "../DashboardSidebarComp/images/1 on 1  Mentrship.jpeg";
