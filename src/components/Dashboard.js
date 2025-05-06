@@ -635,7 +635,7 @@ const Dashboard = () => {
           >
             {/* Header with Search */}
             <div className="row align-items-center dashboard-head">
-              <div className="col position-relative search-main">
+              <div className="col search-main">
               <SearchTicker />
                 {/* <input
                   type="text"

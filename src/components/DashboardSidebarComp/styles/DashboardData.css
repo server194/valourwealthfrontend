@@ -42,6 +42,8 @@
 .user_info {
   cursor: pointer;
   padding-bottom: 6px;
+  display: flex;
+  justify-content: end;
   width: 100%;
 }
 
@@ -78,7 +80,8 @@ justify-content: space-between !important;
 /* Search Container */
 .search-container {
   position: relative;
-  margin-left: 15px;
+  /* margin-left: 15px; */
+  
 }
 
 
@@ -231,6 +234,7 @@ justify-content: space-between !important;
   margin-left: 20px;
 }
 
+
 .detail-row {
   display: flex;
   justify-content: space-between;
@@ -283,8 +287,10 @@ justify-content: space-between !important;
 .search-main { position: absolute !important;
   z-index: 100;
   top: 10px;
-  background: #ccc;
-  width: fit-content; }
+  width: fit-content !important;
+  background-color: #140f0f;
+ }
+
 
 
 
