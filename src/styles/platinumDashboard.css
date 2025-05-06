@@ -1839,6 +1839,7 @@ body::-webkit-scrollbar-thumb {
 /* Action buttons styles */
 .challenge-actions {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
