@@ -5,8 +5,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 /* Header Styles */
@@ -63,27 +62,6 @@
   letter-spacing: 0.5px;
 }
 
-.dashboard-bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: 0;
-  pointer-events: none;
-}
-/* Overlay Effect */
-.main_module::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color & opacity */
-  z-index: 1;
-}
 .sidebar-item {
   display: flex;
   justify-content: space-between;
@@ -93,8 +71,9 @@
   font-size: 14px;
   border-radius: 10px;
   border: none;
+
 }
-.sidebar-item span {
+.sidebar-item  span {
   color: #fff;
   font-size: 18px;
 }
@@ -167,7 +146,7 @@
 /* Content Area Styles */
 .valour-content {
   flex: 1;
-  background-color: #000;
+  background-color: #000  ;
   color: white;
   padding: 25px;
   overflow-y: auto;
@@ -194,6 +173,7 @@
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
+
 }
 
 .content-info {
@@ -260,7 +240,7 @@
 }
 .main_module {
   position: relative;
-  background-image: url(../components/DashboardSidebarComp/images/dashboard-main-new.jpg);
+  background-image: url(../components/DashboardSidebarComp/images/dashboard-main-new.jpg); /* fallback image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -268,9 +248,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20px;
   border-bottom: 1px solid #363636;
+  overflow: hidden; /* important */
 }
+
+.dashboard-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.main_module .module-info {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  color: white; /* Ensures text is visible over video */
+}
+
 
 /* Overlay Effect */
 .main_module::after {
@@ -290,12 +289,15 @@
   z-index: 2;
 }
 
+
 .accordion-icon {
   display: inline-block;
   width: 18px;
   height: 18px;
   margin-right: 10px;
 }
+
+
 
 .accordion-content {
   padding: 15px;
@@ -310,8 +312,7 @@
   margin-top: 30px;
 }
 
-.prev-btn,
-.next-btn {
+.prev-btn, .next-btn {
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -352,50 +353,13 @@
     flex-direction: column;
     height: auto;
   }
-
+  
   .valour-sidebar {
     width: 100%;
   }
-
+  
   .navigation-controls {
     flex-direction: column;
     gap: 10px;
   }
-}
-
-.play-button-overlay {
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size: 2rem;
-  border: none;
-  border-radius: 50%;
-  padding: 10px 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.play-button-overlay:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/* mine */
-.play-button-overlay {
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  font-size: 2rem;
-  border: none;
-  border-radius: 50%;
-  padding: 10px 14px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.play-button-overlay:hover {
-  background: rgba(0, 0, 0, 0.8);
 }
