@@ -1,4 +1,4 @@
-import valourThemeCard from "../DashboardSidebarComp/images/products-theme-card.jpg";
+import valourThemeCard from "../DashboardSidebarComp/images/products-theme-card.jpeg";
 import valourThemeCard2 from "../DashboardSidebarComp/images/1 on 1  Mentrship.jpeg";
 import valourThemeCard3 from "../DashboardSidebarComp/images/TradeGPT.jpeg";
 import valourThemeCard4 from "../DashboardSidebarComp/images/Trading Academy.jpeg";
