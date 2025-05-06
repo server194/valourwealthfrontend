@@ -635,16 +635,17 @@ const Dashboard = () => {
           >
             {/* Header with Search */}
             <div className="row align-items-center dashboard-head">
-              {/* <div className="col position-relative search-main">
-                <input
+              <div className="col position-relative search-main">
+              <SearchTicker />
+                {/* <input
                   type="text"
                   className={`search_bar ${darkMode ? "dark-mode" : ""}`}
                   placeholder="Search Tickers..."
                 />
-                <i className="fas fa-search search-icon"></i>
-              </div> */}
+                <i className="fas fa-search search-icon"></i> */}
+              </div>
 
-              <SearchTicker />
+              
 
               <div className="col-auto user_info position-relative">
                 <img
