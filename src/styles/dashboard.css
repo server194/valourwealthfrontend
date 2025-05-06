@@ -495,10 +495,7 @@ body .dark {
   text-decoration: none;
 }
 
-.dashboard-head {
-  margin-bottom: 0;
-  padding: 12px 6px;
-}
+.dashboard-head{padding: 10px 40px 10px 10px; }
 
 /* Mobile View */
 @media (max-width: 992px) {

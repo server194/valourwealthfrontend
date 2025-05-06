@@ -656,7 +656,7 @@ const ValourAcademy = () => {
       const token = localStorage.getItem("accessToken");
       try {
         const res = await fetch(
-          `https://valourwealthdjango-production.up.railway.app/courses/${courseId}/`,
+          `https://valourwealth-production.up.railway.app/courses/${courseId}/`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -699,7 +699,7 @@ const ValourAcademy = () => {
     const fetchProgress = async () => {
       const token = localStorage.getItem("accessToken");
       const res = await fetch(
-        `https://valourwealthdjango-production.up.railway.app/courses/${courseId}/progress/`,
+        `https://valourwealth-production.up.railway.app/courses/${courseId}/progress/`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -729,7 +729,7 @@ const ValourAcademy = () => {
       );
       if (!levelObj) return;
       const res = await fetch(
-        `https://valourwealthdjango-production.up.railway.app/courses/${courseId}/levels/${levelObj.id}/notes/`,
+        `https://valourwealth-production.up.railway.app/courses/${courseId}/levels/${levelObj.id}/notes/`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -751,7 +751,7 @@ const ValourAcademy = () => {
       );
       if (!levelObj) return;
       const res = await fetch(
-        `https://valourwealthdjango-production.up.railway.app/courses/${courseId}/levels/${levelObj.id}/mcqs/`,
+        `https://valourwealth-production.up.railway.app/courses/${courseId}/levels/${levelObj.id}/mcqs/`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -905,7 +905,7 @@ const ValourAcademy = () => {
       const token = localStorage.getItem("accessToken");
       try {
         await fetch(
-          `https://valourwealthdjango-production.up.railway.app/videos/${videoId}/watch/`,
+          `https://valourwealth-production.up.railway.app/videos/${videoId}/watch/`,
           {
             method: "POST",
             headers: {
@@ -916,7 +916,7 @@ const ValourAcademy = () => {
         );
 
         const res = await fetch(
-          `https://valourwealthdjango-production.up.railway.app/courses/${courseId}/progress/`,
+          `https://valourwealth-production.up.railway.app/courses/${courseId}/progress/`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
