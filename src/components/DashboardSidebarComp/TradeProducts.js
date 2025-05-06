@@ -276,7 +276,7 @@
 //   );
 // };
 
-// export default FinancialCards;
+// export default FinancialCardgis;
 
 
 // import valourThemeCard from "../DashboardSidebarComp/images/products-theme-card.jpeg";
