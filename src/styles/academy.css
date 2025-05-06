@@ -240,7 +240,7 @@
 }
 .main_module {
   position: relative;
-  background-image: url(https://pub-e58a5f6126d0464c9b810e772987ba18.r2.dev/bannergreen.mp4); /* fallback image */
+  /* background-image: url(https://pub-e58a5f6126d0464c9b810e772987ba18.r2.dev/bannergreen.mp4); fallback image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,7 +263,10 @@
   pointer-events: none;
 }
 
-.main_module .module-info {
+
+
+
+.module-info {
   position: absolute;
   left: 20px;
   z-index: 2;

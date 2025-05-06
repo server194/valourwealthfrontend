@@ -1193,6 +1193,7 @@ const ValourAcademy = () => {
                     <source src="https://pub-e58a5f6126d0464c9b810e772987ba18.r2.dev/bannergreen.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
               </video>
+              
               <div className="content-breadcrumb">
                 <span>
                   {selectedLevel.charAt(0).toUpperCase() +
