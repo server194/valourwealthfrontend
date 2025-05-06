@@ -71,8 +71,7 @@
 // import {
 //   FileText,
 
-import React from "react";
-// import valourThemeCard from "../DashboardSidebarComp/images/products-theme-card.jpeg";
+
 
 import React, { useState } from 'react';
 import "../DashboardSidebarComp/styles/products.css";
