@@ -1178,9 +1178,8 @@ const ValourAcademy = () => {
         </div>
         <div className="valour-content p-0">
           {courseData && (
-            <div className="main_module">
-              
-              <video
+          <div className="main_module">
+          <video
           className="dashboard-bg-video"
           autoPlay
           loop
@@ -1197,6 +1196,8 @@ const ValourAcademy = () => {
           />
           Your browser does not support the video tag.
         </video>
+ 
+           <div className="main-module-info">
               <div className="content-breadcrumb">
                 <span>
                   {selectedLevel.charAt(0).toUpperCase() +
@@ -1221,6 +1222,7 @@ const ValourAcademy = () => {
                   </span>
                 </div>
               </div>
+            </div>
             </div>
           )}
           <div className="accordion-container">

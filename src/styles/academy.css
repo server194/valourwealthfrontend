@@ -249,13 +249,20 @@
 
 /* Background Video Section */
 .main_module {
-  position: relative;
+  position: relative !important;
   height: 250px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-bottom: 1px solid #363636;
+}
+.main-module-info {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  padding: 10px;
+   
 }
 
 .dashboard-bg-video {
