@@ -618,6 +618,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/academy.css";
+import bannerVideo from "../assets/images/bannergreen.mp4"
 import {
   FaBookOpen,
   FaFileAlt,
@@ -1178,6 +1179,20 @@ const ValourAcademy = () => {
         <div className="valour-content p-0">
           {courseData && (
             <div className="main_module">
+              <video
+                    className="dashboard-bg-video"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="auto"
+                    disablePictureInPicture
+                    controlsList="nodownload nofullscreen noremoteplayback"
+                    onContextMenu={(e) => e.preventDefault()}
+                  >
+                    <source src={bannerVideo} type="video/mp4" />
+                    Your browser does not support the video tag.
+              </video>
               <div className="content-breadcrumb">
                 <span>
                   {selectedLevel.charAt(0).toUpperCase() +
